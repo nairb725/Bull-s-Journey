@@ -202,6 +202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoseScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 6280137258819411979, guid: df3d8947e60428c41a34c95ef4928f3d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7103382136805968712, guid: df3d8947e60428c41a34c95ef4928f3d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
