@@ -17,7 +17,7 @@ public class GrandpaWalk : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("goingRight", 0.33f);
+        Invoke("goingRight", 1f);
     }
 
     // Update is called once per frame

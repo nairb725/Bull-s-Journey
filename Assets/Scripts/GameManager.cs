@@ -24,12 +24,15 @@ public class GameManager : MonoBehaviour
 
     public void Lauchgame()
     {
+        Debug.Log("play");
+
         DisplayUI(false);
         Invoke(nameof(StartTracking), 2f);
     }
 
     public void Quit()
     {
+        Debug.Log("quit");
         //Quit app
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
