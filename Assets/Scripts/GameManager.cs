@@ -2,11 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public enum GameState
+{
+    Menu, Play, Lose, Win
+}
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject m_UI;
     [SerializeField] TrackingCamera m_Camera;
     [SerializeField] PlayerController m_Player;
+    [SerializeField] private bool _isWining = false;
+    private GameState _gameState;
+    [SerializeField] GameObject canvasWin;
+    [SerializeField] GameObject canvasLose;
+    [SerializeField] GameObject canvasMenu;
+
+
+
 
     public void DisplayUI(bool display) => m_UI.SetActive(display);
 
@@ -30,7 +43,22 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        switch(_gameState){
+            case GameState.Menu:
+                canvasMenu.SetActive(true);
+                break;
+            case GameState.Play:
+                canvasMenu.SetActive(false);
+                canvasLose.SetActive(false);
+                canvasWin.SetActive(false);
+                break;
+            case GameState.Lose:
+                canvasLose.SetActive(true);
+                break;
+            case GameState.Win:
+                canvasWin.SetActive(true);
+                break;
+        }
     }
 
     public void Lauchgame()
@@ -57,7 +85,12 @@ public class GameManager : MonoBehaviour
     }
 
     public bool IsEndGame ()
+    {   
+        return _isWining;
+    }
+
+    public void ChangeState(GameState state)
     {
-        return false;
+        _gameState = state;
     }
 }

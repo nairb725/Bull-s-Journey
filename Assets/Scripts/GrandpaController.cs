@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GrandpaWalk : MonoBehaviour
+public class GrandpaController : MonoBehaviour
 {
 
     [SerializeField]
@@ -13,6 +13,9 @@ public class GrandpaWalk : MonoBehaviour
 
     [SerializeField]
     private bool _isGoingRight = false;
+
+    [SerializeField]
+    private bool _isWining = false;
 
     // Start is called before the first frame update
     void Start()
@@ -37,5 +40,13 @@ public class GrandpaWalk : MonoBehaviour
     void goingRight()
     {
         _isGoingRight = true;
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.tag == "WinCon")
+        {
+            GameManager.Instance.ChangeState(GameState.Win);
+        }
     }
 }
