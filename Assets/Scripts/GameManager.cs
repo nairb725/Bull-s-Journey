@@ -63,9 +63,8 @@ public class GameManager : MonoBehaviour
 
     public void Lauchgame()
     {
-        Debug.Log("play");
-
-        DisplayUI(false);
+        Debug.Log("iuytrdfgj");
+        _gameState = GameState.Lose;
         Invoke(nameof(StartTracking), 2f);
     }
 

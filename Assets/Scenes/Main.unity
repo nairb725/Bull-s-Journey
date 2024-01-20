@@ -765,6 +765,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1605009934}
+    - target: {fileID: 7021966277328286234, guid: 5908f396122a3754ab5426be06cc8295, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Lauchgame
+      objectReference: {fileID: 0}
     - target: {fileID: 7332992427300966649, guid: 5908f396122a3754ab5426be06cc8295, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
