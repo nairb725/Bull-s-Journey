@@ -18,9 +18,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject canvasLose;
     [SerializeField] GameObject canvasMenu;
 
-
-
-
     public void DisplayUI(bool display) => m_UI.SetActive(display);
 
     public static GameManager Instance; // A static reference to the GameManager instance

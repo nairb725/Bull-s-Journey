@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float SpeedCharacter;
 
+    [SerializeField]
+    private Animator m_Animator;
+
     private Vector2 _movement;
     private Rigidbody2D _rigidBody;
 
@@ -31,6 +34,8 @@ public class PlayerController : MonoBehaviour
         {
             // Walk Sound
             _movement = value.Get<Vector2>();
+            m_Animator.SetFloat("x", _movement.x);
+            m_Animator.SetFloat("y", _movement.y);
         }
     }
     void OnCollisionEnter2D(Collision2D collider)
