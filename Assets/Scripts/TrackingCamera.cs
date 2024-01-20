@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TrackingCamera : MonoBehaviour
 {
-    private bool _isTracking;
+    private bool _isTracking = false;
     [SerializeField] GameObject m_TargetTracking;
 
     public void Track() => _isTracking = true;
