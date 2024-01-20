@@ -33,4 +33,11 @@ public class PlayerController : MonoBehaviour
             _movement = value.Get<Vector2>();
         }
     }
+    void OnCollisionEnter2D(Collision2D collider)
+    {
+        if (collider.gameObject.CompareTag("Projectile"))
+        {
+            Destroy(collider.gameObject);
+        }
+    }
 }
