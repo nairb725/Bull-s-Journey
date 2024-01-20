@@ -1,32 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
     private float SpeedCharacter;
 
-    private Rigidbody2D rb;
+    private Vector2 _movement;
+    private Rigidbody2D _rigidBody;
 
-    [SerializeField]
-    private bool _isFacingLeft;
-    void Start()
+    private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        _rigidBody = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    private void FixedUpdate()
     {
-        // Input handling
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+        _rigidBody.velocity = new Vector2(_movement.x * SpeedCharacter, _movement.y * SpeedCharacter);
+    }
 
-        // Movement calculation
-        Vector2 movement = new Vector2(horizontalInput, verticalInput);
-        movement.Normalize(); // Ensure consistent speed in all directions
-
-        // Applying movement
-        rb.velocity = movement * SpeedCharacter;
+    public void OnMove(InputValue value)
+    {
+        if (GameManager.Instance.IsEndGame())
+        {
+            _movement = Vector2.zero;
+        }
+        else
+        {
+            // Walk Sound
+            _movement = value.Get<Vector2>();
+        }
     }
 }
