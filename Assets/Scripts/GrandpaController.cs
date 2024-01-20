@@ -44,9 +44,16 @@ public class GrandpaController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.tag == "WinCon")
+        if (collider.gameObject.CompareTag("WinCon"))
         {
             GameManager.Instance.ChangeState(GameState.Win);
+        }
+    }
+    void OnCollisionEnter2D(Collision2D collider)
+    {
+        if (collider.gameObject.CompareTag("Projectile"))
+        {
+            GameManager.Instance.ChangeState(GameState.Lose);
         }
     }
 }
