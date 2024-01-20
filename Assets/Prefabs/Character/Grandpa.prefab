@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4400183999618159008}
   - component: {fileID: 2383886834879665976}
   - component: {fileID: 4003541858798109684}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Grandpa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,6 +151,7 @@ MonoBehaviour:
   SpeedCharacter: 2
   LifePoint: 0
   _isGoingRight: 0
+  _isWining: 0
 --- !u!58 &4003541858798109684
 CircleCollider2D:
   m_ObjectHideFlags: 0
