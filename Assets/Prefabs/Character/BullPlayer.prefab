@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5127939936112287193}
   - component: {fileID: 6528486694270859301}
   - component: {fileID: 1133839971266984672}
+  - component: {fileID: 1901593532403010213}
   m_Layer: 8
   m_Name: BullPlayer
   m_TagString: Untagged
@@ -215,3 +216,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!81 &1901593532403010213
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5895351031713876379}
+  m_Enabled: 1
