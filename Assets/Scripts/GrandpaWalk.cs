@@ -11,13 +11,13 @@ public class GrandpaWalk : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.Translate(Vector3.down * SpeedCharacter * Time.smoothDeltaTime);
-        Invoke("Grandpa", 2.0f);
+        
     }
 
     // Update is called once per frame
-    void Grandpa()
+    void Update()
     {
         transform.Translate(Vector3.right * SpeedCharacter * Time.smoothDeltaTime);
+
     }
 }
