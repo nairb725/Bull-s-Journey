@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Border
   - 
   - 
   - 
@@ -40,4 +40,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3857299517
+    locked: 0
+  - name: DetailsBackground
+    uniqueID: 4162011771
+    locked: 0
+  - name: Player
+    uniqueID: 643407919
+    locked: 0
+  - name: Border
+    uniqueID: 2509479747
+    locked: 0
+  - name: DetailsBorder
+    uniqueID: 2904346955
+    locked: 0
+  - name: Foreground
+    uniqueID: 146418197
+    locked: 0
+  - name: DetailsForeground
+    uniqueID: 4094678263
     locked: 0
