@@ -223,10 +223,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1325132810416113750, guid: 5908f396122a3754ab5426be06cc8295, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 26b56c42b406569459489f28c29dd812, type: 3}
     - target: {fileID: 2710216102067433320, guid: 5908f396122a3754ab5426be06cc8295, type: 3}
       propertyPath: m_LocalPosition.x
       value: 61.787354
@@ -267,33 +263,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3951266175768960649, guid: 5908f396122a3754ab5426be06cc8295, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 712.8154
-      objectReference: {fileID: 0}
-    - target: {fileID: 3951266175768960649, guid: 5908f396122a3754ab5426be06cc8295, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 423.7516
-      objectReference: {fileID: 0}
-    - target: {fileID: 3951266175768960649, guid: 5908f396122a3754ab5426be06cc8295, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -41
-      objectReference: {fileID: 0}
-    - target: {fileID: 3951266175768960649, guid: 5908f396122a3754ab5426be06cc8295, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -235.12
-      objectReference: {fileID: 0}
     - target: {fileID: 8654612247141664119, guid: 5908f396122a3754ab5426be06cc8295, type: 3}
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
-    - target: {fileID: 8654612247141664119, guid: 5908f396122a3754ab5426be06cc8295, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 1960303914591873851, guid: 5908f396122a3754ab5426be06cc8295, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5908f396122a3754ab5426be06cc8295, type: 3}
@@ -376,10 +351,6 @@ PrefabInstance:
     - target: {fileID: 6280137258819411979, guid: df3d8947e60428c41a34c95ef4928f3d, type: 3}
       propertyPath: m_Name
       value: LoseScreen
-      objectReference: {fileID: 0}
-    - target: {fileID: 6280137258819411979, guid: df3d8947e60428c41a34c95ef4928f3d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7103382136805968712, guid: df3d8947e60428c41a34c95ef4928f3d, type: 3}
       propertyPath: m_Pivot.x
@@ -474,25 +445,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1918457218269958085, guid: faa62d8cf477ce84a8e4b102eff626ac, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -21.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1918457218269958085, guid: faa62d8cf477ce84a8e4b102eff626ac, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -46.7
-      objectReference: {fileID: 0}
     - target: {fileID: 2122940291229338847, guid: faa62d8cf477ce84a8e4b102eff626ac, type: 3}
       propertyPath: m_Name
       value: WinScreen
-      objectReference: {fileID: 0}
-    - target: {fileID: 2122940291229338847, guid: faa62d8cf477ce84a8e4b102eff626ac, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6471783729171741974, guid: faa62d8cf477ce84a8e4b102eff626ac, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 118
       objectReference: {fileID: 0}
     - target: {fileID: 8568012753929958362, guid: faa62d8cf477ce84a8e4b102eff626ac, type: 3}
       propertyPath: m_Pivot.x
