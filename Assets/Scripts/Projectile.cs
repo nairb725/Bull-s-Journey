@@ -20,7 +20,7 @@ public class Projectile : MonoBehaviour
     {
         _rigidBody = GetComponent<Rigidbody2D>();
 
-        _speed = new Vector2(Random.Range(m_SpeedRangeX.x, m_SpeedRangeX.y), Random.Range(m_SpeedRangeY.y, m_SpeedRangeY.y));
+        _speed = new Vector2(Random.Range(m_SpeedRangeX.x, m_SpeedRangeX.y), Random.Range(m_SpeedRangeY.x, m_SpeedRangeY.y));
         if (_speed.x > 0)
         {
             m_Renderer.flipX = true;

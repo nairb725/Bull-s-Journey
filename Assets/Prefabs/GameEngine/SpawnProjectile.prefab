@@ -46,4 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Proj: {fileID: 8701713978038651171, guid: 5a7c1bd120c716246ae2f9665e417e24, type: 3}
   m_SpawnRate: 5
-  m_Width: 90
+  m_Width: 175

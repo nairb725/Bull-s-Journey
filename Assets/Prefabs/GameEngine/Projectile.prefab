@@ -134,8 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d5884a3012e9549b096d6b2830f8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SpeedRangeX: {x: 2, y: 4}
-  m_SpeedRangeY: {x: -2, y: -4}
+  m_SpeedRangeX: {x: -4, y: 4}
+  m_SpeedRangeY: {x: -4, y: 4}
   m_Renderer: {fileID: 4779958058449607649}
 --- !u!50 &1541621555970074463
 Rigidbody2D:
@@ -163,4 +163,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 1
+  m_Constraints: 0
