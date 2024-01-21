@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject canvasWin;
     [SerializeField] GameObject canvasLose;
     [SerializeField] GameObject canvasMenu;
+    [SerializeField] private AudioSource randomSound;
+    [SerializeField] private AudioClip[] audioSources;
 
     public void DisplayUI(bool display) => m_UI.SetActive(display);
 
@@ -54,6 +56,11 @@ public class GameManager : MonoBehaviour
             case GameState.Win:
                 canvasWin.SetActive(true);
                 break;
+        }
+
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.G))
+        {
+            RandomSound();
         }
     }
 
@@ -93,5 +100,11 @@ public class GameManager : MonoBehaviour
     {
         _gameState = state;
         if (IsEndGame()) m_Camera.Untrack();
+    }
+
+    void RandomSound()
+    {
+        randomSound.clip = audioSources[Random.Range(0, audioSources.Length)];
+        randomSound.Play();
     }
 }

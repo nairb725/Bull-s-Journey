@@ -47,3 +47,19 @@ MonoBehaviour:
   m_UI: {fileID: 8654612247141664119, guid: 5908f396122a3754ab5426be06cc8295, type: 3}
   m_Camera: {fileID: 0}
   m_Player: {fileID: 0}
+  m_GrandPa: {fileID: 0}
+  canvasWin: {fileID: 0}
+  canvasLose: {fileID: 0}
+  canvasMenu: {fileID: 0}
+  randomSound: {fileID: 0}
+  audioSources:
+  - {fileID: 8300000, guid: 0a787a9710fcf1f45a1dbd7900d0f5eb, type: 3}
+  - {fileID: 8300000, guid: e6c099d7ba0dd5a4a88dfd0dcb622a5e, type: 3}
+  - {fileID: 8300000, guid: 902cc2b69892d904ea41ca9ec7a03830, type: 3}
+  - {fileID: 8300000, guid: 62f56faa25a646542bf5c27962afe831, type: 3}
+  - {fileID: 8300000, guid: 1cc9b5c2d816b124a8a5313682be941a, type: 3}
+  - {fileID: 8300000, guid: 472fb89bf5b79e746a39076c7ed4c722, type: 3}
+  - {fileID: 8300000, guid: 28fd7bd255293404f81b6a5769615ae2, type: 3}
+  - {fileID: 8300000, guid: d838cdeb72419744db06717f3329cf1f, type: 3}
+  - {fileID: 8300000, guid: ae497ed2ad4eb694e9272f0027924b89, type: 3}
+  - {fileID: 8300000, guid: 724c626c8eb7c574f8f3954ba2ca4f03, type: 3}
