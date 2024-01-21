@@ -377,6 +377,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoseScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 6280137258819411979, guid: df3d8947e60428c41a34c95ef4928f3d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7103382136805968712, guid: df3d8947e60428c41a34c95ef4928f3d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -470,6 +474,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1918457218269958085, guid: faa62d8cf477ce84a8e4b102eff626ac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1918457218269958085, guid: faa62d8cf477ce84a8e4b102eff626ac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -46.7
+      objectReference: {fileID: 0}
     - target: {fileID: 2122940291229338847, guid: faa62d8cf477ce84a8e4b102eff626ac, type: 3}
       propertyPath: m_Name
       value: WinScreen
@@ -477,6 +489,10 @@ PrefabInstance:
     - target: {fileID: 2122940291229338847, guid: faa62d8cf477ce84a8e4b102eff626ac, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6471783729171741974, guid: faa62d8cf477ce84a8e4b102eff626ac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 118
       objectReference: {fileID: 0}
     - target: {fileID: 8568012753929958362, guid: faa62d8cf477ce84a8e4b102eff626ac, type: 3}
       propertyPath: m_Pivot.x
