@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpeedCharacter: 2
   LifePoint: 0
+  m_Animator: {fileID: 4400183999618159008}
   _isGoingRight: 0
   _isWining: 0
 --- !u!58 &4003541858798109684

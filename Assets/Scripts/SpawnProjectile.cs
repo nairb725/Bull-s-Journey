@@ -17,7 +17,7 @@ public class SpawnProjectile : MonoBehaviour
     }
     void Update()
     {
-        if (Time.time - _lastSpawn >= 1f / m_SpawnRate) Spawn();
+        if (Time.time - _lastSpawn >= 1f / m_SpawnRate && !GameManager.Instance.IsEndGame()) Spawn();
     }
 
     void Spawn()

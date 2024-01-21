@@ -5,41 +5,32 @@ using UnityEngine;
 public class GrandpaController : MonoBehaviour
 {
 
-    [SerializeField]
-    private float SpeedCharacter;
-
-    [SerializeField]
-    private int LifePoint;
-
-    [SerializeField]
+    [SerializeField] float SpeedCharacter;
+    [SerializeField] int LifePoint;
+    [SerializeField] Animator m_Animator;
     private bool _isGoingRight = false;
 
-    [SerializeField]
-    private bool _isWining = false;
-
-    // Start is called before the first frame update
-    void Start()
+    public void StartGame()
     {
-        Invoke("goingRight", 1f);
+        Invoke(nameof(GoingRight), 0.75f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(_isGoingRight == true)
+        if(_isGoingRight)
         {
-            transform.Translate(Vector3.right * SpeedCharacter * Time.smoothDeltaTime);
-            transform.Translate(Vector3.up * SpeedCharacter * Time.smoothDeltaTime);
-
-        }
+            transform.Translate(SpeedCharacter * Time.smoothDeltaTime * Vector3.right);
+        } else 
         {       
-            transform.Translate(Vector3.down * SpeedCharacter * Time.smoothDeltaTime);
+            transform.Translate(SpeedCharacter * Time.smoothDeltaTime * Vector3.down);
         }
     }
 
-    void goingRight()
+    private void GoingRight()
     {
         _isGoingRight = true;
+        m_Animator.SetBool("IsTurningRight", true);
     }
 
     void OnTriggerEnter2D(Collider2D collider)

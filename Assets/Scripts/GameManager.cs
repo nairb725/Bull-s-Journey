@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public enum GameState
 {
@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject m_UI;
     [SerializeField] TrackingCamera m_Camera;
     [SerializeField] PlayerController m_Player;
-    [SerializeField] private bool _isWining = false;
+    [SerializeField] GrandpaController m_GrandPa;
     private GameState _gameState;
     [SerializeField] GameObject canvasWin;
     [SerializeField] GameObject canvasLose;
@@ -31,10 +31,9 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject); // Destroy the GameObject, this component is attached to
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        m_GrandPa.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -60,14 +59,19 @@ public class GameManager : MonoBehaviour
 
     public void Lauchgame()
     {
-        Debug.Log("iuytrdfgj");
         _gameState = GameState.Play;
+        m_GrandPa.gameObject.SetActive(true);
+        m_GrandPa.StartGame();
         Invoke(nameof(StartTracking), 2f);
+    }
+
+    public void Replay()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void Quit()
     {
-        Debug.Log("quit");
         //Quit app
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
@@ -80,13 +84,14 @@ public class GameManager : MonoBehaviour
         m_Camera.Track();
     }
 
-    public bool IsEndGame ()
+    public bool IsEndGame()
     {   
-        return _isWining;
+        return GameState.Lose == _gameState || GameState.Win == _gameState;
     }
 
     public void ChangeState(GameState state)
     {
         _gameState = state;
+        if (IsEndGame()) m_Camera.Untrack();
     }
 }
