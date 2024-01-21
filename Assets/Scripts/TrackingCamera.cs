@@ -15,6 +15,6 @@ public class TrackingCamera : MonoBehaviour
     void FixedUpdate()
     {
         if (_isTracking)
-            transform.position = new Vector3(m_TargetTracking.transform.position.x, m_TargetTracking.transform.position.y, transform.position.z);
+            transform.position = new Vector3(m_TargetTracking.transform.position.x, transform.position.y, transform.position.z);
     }
 }

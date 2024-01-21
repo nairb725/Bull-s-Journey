@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
         _gameState = GameState.Play;
         m_GrandPa.gameObject.SetActive(true);
         m_GrandPa.StartGame();
-        Invoke(nameof(StartTracking), 2f);
+        Invoke(nameof(StartTracking), 4f);
     }
 
     public void Replay()
