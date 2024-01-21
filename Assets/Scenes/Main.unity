@@ -351,6 +351,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpawnProjectile
       objectReference: {fileID: 0}
+    - target: {fileID: 9003920507881436448, guid: 17d8fe7d00e9329478cd613ccb8481ac, type: 3}
+      propertyPath: m_Width
+      value: 175
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
