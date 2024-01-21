@@ -309,7 +309,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6661596789776288977, guid: 17d8fe7d00e9329478cd613ccb8481ac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.6
+      value: 35.1
       objectReference: {fileID: 0}
     - target: {fileID: 6661596789776288977, guid: 17d8fe7d00e9329478cd613ccb8481ac, type: 3}
       propertyPath: m_LocalPosition.y
@@ -356,6 +356,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17d8fe7d00e9329478cd613ccb8481ac, type: 3}
+--- !u!82 &455901712 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 682378787119425235, guid: b6fdb8ac906474e46bc95f1d72a0eb49, type: 3}
+  m_PrefabInstance: {fileID: 226728410495889127}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &956816985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -740,6 +745,10 @@ PrefabInstance:
       propertyPath: canvasMenu
       value: 
       objectReference: {fileID: 45106286}
+    - target: {fileID: 1850103558847290244, guid: 667b4f3be24a8b746a8b4a01d2d7d21b, type: 3}
+      propertyPath: randomSound
+      value: 
+      objectReference: {fileID: 455901712}
     - target: {fileID: 2606212939956815732, guid: 667b4f3be24a8b746a8b4a01d2d7d21b, type: 3}
       propertyPath: m_Name
       value: GameManager
