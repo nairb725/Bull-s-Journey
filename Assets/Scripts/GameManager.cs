@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public enum GameState
 {
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject canvasWin;
     [SerializeField] GameObject canvasLose;
     [SerializeField] GameObject canvasMenu;
+    [SerializeField] CanvasGroup m_FirstScreen;
     [SerializeField] private AudioSource randomSound;
     [SerializeField] private AudioClip[] audioSources;
 
@@ -36,6 +38,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         m_GrandPa.gameObject.SetActive(false);
+        StartCoroutine(Utils.Anim.FadeOut(3f, m_FirstScreen));
     }
 
     // Update is called once per frame
